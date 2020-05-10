@@ -1,4 +1,4 @@
-package com.nfsm.springboot.tablaarticulos.web.app.controller;
+package com.nfm.springboot.tablaarticulos.web.app.controller;
 
 import java.util.Arrays;
 import java.util.List;
