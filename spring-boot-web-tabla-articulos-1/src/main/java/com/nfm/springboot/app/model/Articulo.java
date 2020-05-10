@@ -4,12 +4,32 @@ public class Articulo {
 	private String descripcion;
 	private String precio;
 	private String marca;
+	private String cantidad;
+	private String proveedor;
 
-	public Articulo(String descripcion, String precio, String marca) {
+	public Articulo(String descripcion, String precio, String marca, String cantidad, String proveedor) {
 		super();
 		this.descripcion = descripcion;
 		this.precio = precio;
 		this.marca = marca;
+		this.cantidad = cantidad;
+		this.proveedor = proveedor;
+	}
+
+	public String getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(String cantidad) {
+		this.cantidad = cantidad;
+	}
+
+	public String getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(String proveedor) {
+		this.proveedor = proveedor;
 	}
 
 	public Articulo() {

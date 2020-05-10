@@ -37,15 +37,15 @@ public class indexController {
 	}
 	@ModelAttribute("articulos")
 	public List<Articulo> poblarArticulos(){
-		List<Articulo> articulos = Arrays.asList(new Articulo("Mayonesa", "$ 27:99", "Mccormick"),
-				new Articulo("Azucar 500 gr", "$ 43:23", "Zulka"),
-				new Articulo("Leche 1 Litro", "$ 29:00", "Lala"),
-				new Articulo("Galletas Chocolate 60g", "$ 12:00", "Chokis"),
-				new Articulo("Six Cerveza", "$ 150:00", "Corona"),
-				new Articulo("Frijol Bayo Crudo 1kg", "$ 21:28", "Puritano"),
-				new Articulo("Mini Takis Fuego", "$ 16:10", "Barcel"),
-				new Articulo("Concentrado de agua de piña", "$ 10:00", "ninguno"),
-				new Articulo("Horchata ", "$ 36:00", "Deliciosa"));
+		List<Articulo> articulos = Arrays.asList(new Articulo("Mayonesa", "$ 27:99", "Mccormick", "12pz", "La Costeña"),
+				new Articulo("Azucar 500 gr", "$ 43:23", "Zulka", "30pz", "Zulkarmex"),
+				new Articulo("Leche 1 Litro", "$ 29:00", "Lala", "12pz", "Alpura"),
+				new Articulo("Galletas Chocolate 60g", "$ 12:00", "Chokis", "24pz", "Gamesa"),
+				new Articulo("Six Cerveza", "$ 150:00", "Corona", "8pz", "Modelo"),
+				new Articulo("Frijol Bayo Crudo 1kg", "$ 21:28", "Puritano", "6pz", "El puritano"),
+				new Articulo("Mini Takis Fuego", "$ 16:10", "Barcel", "1pack", "Barcel"),
+				new Articulo("Concentrado de agua de piña", "$ 10:00", "ninguno", "5pz", "ninguno"),
+				new Articulo("Horchata ", "$ 36:00", "Deliciosa", "8pz", "Proalmex"));
 		
 				return articulos;
 	}
