@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<div th:if="${articulos.size()==0}">No hay elementos en la lista</div>
+
+	<table th:if="${not articulos.isEmpty()}">
+		<thead>
+			<tr>
+				<th>Descripcion</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="articulo: ${articulos}">
+				<td th:text="${articulo.descripcion}"></td>
+				</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
