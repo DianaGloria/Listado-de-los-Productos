@@ -16,7 +16,7 @@ import com.nfm.springboot.app.model.Articulo;
 public class indexController {
 	@GetMapping ({"/index", "/", "/home", "", "casa"})
 	public String index(Model model){
-		model.addAttribute("Titulo", "Hola Spring Framework");
+		model.addAttribute("titulo", "Hola Spring Framework");
 		
 		return "index";
 	}
@@ -37,15 +37,15 @@ public class indexController {
 	}
 	@ModelAttribute("articulos")
 	public List<Articulo> poblarArticulos(){
-		List<Articulo> articulos = Arrays.asList(new Articulo("Mayonesa"),
-				new Articulo("Azucar 500 gr"),
-				new Articulo("Leche 1 Litro"),
-				new Articulo("Galletas Chocolate 60g"),
-				new Articulo("Six Cerveza"),
-				new Articulo("Frijol Bayo Crudo 1kg"),
-				new Articulo("Mini Takis Fuego"),
-				new Articulo("Concentrado de agua de piña"),
-				new Articulo("Six Cerveza"));
+		List<Articulo> articulos = Arrays.asList(new Articulo("Mayonesa", "$ 27:99", "Mccormick"),
+				new Articulo("Azucar 500 gr", "$ 43:23", "Zulka"),
+				new Articulo("Leche 1 Litro", "$ 29:00", "Lala"),
+				new Articulo("Galletas Chocolate 60g", "$ 12:00", "Chokis"),
+				new Articulo("Six Cerveza", "$ 150:00", "Corona"),
+				new Articulo("Frijol Bayo Crudo 1kg", "$ 21:28", "Puritano"),
+				new Articulo("Mini Takis Fuego", "$ 16:10", "Barcel"),
+				new Articulo("Concentrado de agua de piña", "$ 10:00", "ninguno"),
+				new Articulo("Horchata ", "$ 36:00", "Deliciosa"));
 		
 				return articulos;
 	}
